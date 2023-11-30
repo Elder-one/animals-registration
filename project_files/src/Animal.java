@@ -8,16 +8,16 @@ public abstract class Animal {
     private String name;
     public enum gen{MALE, FEMALE};
     private gen gender;
-    private GregorianCalendar birth_date;
+    private GregorianCalendar birthDate;
 
     public Animal(String name, gen gender, String b_date) throws ParseException {
         this.name = name;
         this.gender = gender;
-        setBirth_date(b_date);
+        setBirthDate(b_date);
     }
 
     public int getAgeInMonths() {
-        Date b_date = this.birth_date.getTime();
+        Date b_date = this.birthDate.getTime();
         Date cur_date = new Date();
         long diff_millies = cur_date.getTime() - b_date.getTime();
         TimeUnit timeUnit = TimeUnit.DAYS;
@@ -32,13 +32,13 @@ public abstract class Animal {
         this.gender = value;
     }
 
-    public void setBirth_date(String value) throws ParseException {
+    public void setBirthDate(String value) throws ParseException {
         SimpleDateFormat formatter = new SimpleDateFormat(
                 "yyyy-MM-dd");
         Date date = formatter.parse(value);
         GregorianCalendar calendar = (GregorianCalendar)GregorianCalendar.getInstance();
         calendar.setTime(date);
-        this.birth_date = calendar;
+        this.birthDate = calendar;
     }
 
     public String getName() {
@@ -52,6 +52,6 @@ public abstract class Animal {
     public String getBirthDate() {
         SimpleDateFormat formatter = new SimpleDateFormat(
                 "yyyy-MM-dd");
-        return formatter.format(this.birth_date.getTime());
+        return formatter.format(this.birthDate.getTime());
     }
 }
