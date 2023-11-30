@@ -5,15 +5,23 @@ import java.util.GregorianCalendar;
 import java.util.concurrent.TimeUnit;
 
 public abstract class Animal {
+    private static Integer count;
+    private Integer id;
     private String name;
     public enum gen{MALE, FEMALE};
     private gen gender;
     private GregorianCalendar birthDate;
 
-    public Animal(String name, gen gender, String b_date) throws ParseException {
+    public Animal(String name, gen gender, String bDate) throws ParseException {
         this.name = name;
         this.gender = gender;
-        setBirthDate(b_date);
+        this.id = count;
+        count += 1;
+        setBirthDate(bDate);
+    }
+
+    public int getId() {
+        return this.id;
     }
 
     public int getAgeInMonths() {
@@ -53,5 +61,19 @@ public abstract class Animal {
         SimpleDateFormat formatter = new SimpleDateFormat(
                 "yyyy-MM-dd");
         return formatter.format(this.birthDate.getTime());
+    }
+
+    @Override
+    public String toString() {
+        String gender = "FEMALE";
+        if (this.gender == Animal.gen.MALE) {
+            gender = "MALE";
+        }
+        StringBuilder sb = new StringBuilder();
+        sb.append(String.format("%5d ", this.id));
+        sb.append(String.format("%12s ", this.name));
+        sb.append(String.format("%8s ", gender));
+        sb.append(String.format("%13s",this.getBirthDate()));
+        return sb.toString();
     }
 }
