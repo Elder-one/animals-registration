@@ -1,14 +1,17 @@
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.GregorianCalendar;
 import java.util.concurrent.TimeUnit;
 
-public abstract class Animal {
-    private static Integer count;
+public abstract class Animal implements Comparable<Animal>{
+    public static ArrayList<Animal> animals;
+    private static Integer count = 0;
     private Integer id;
     private String name;
-    public enum gen{MALE, FEMALE};
+    public enum gen{MALE, FEMALE}
+
     private gen gender;
     private GregorianCalendar birthDate;
 
@@ -18,11 +21,13 @@ public abstract class Animal {
         this.id = count;
         count += 1;
         setBirthDate(bDate);
+        animals.add(this);
     }
 
     public int getId() {
         return this.id;
     }
+    public void setId(int value) { this.id = value; }
 
     public int getAgeInMonths() {
         Date b_date = this.birthDate.getTime();
@@ -69,11 +74,24 @@ public abstract class Animal {
         if (this.gender == Animal.gen.MALE) {
             gender = "MALE";
         }
-        StringBuilder sb = new StringBuilder();
-        sb.append(String.format("%5d ", this.id));
-        sb.append(String.format("%12s ", this.name));
-        sb.append(String.format("%8s ", gender));
-        sb.append(String.format("%13s",this.getBirthDate()));
-        return sb.toString();
+        String sb = String.format("%5d ", this.id) +
+                String.format("%12s ", this.name) +
+                String.format("%8s ", gender) +
+                String.format("%13s", this.getBirthDate());
+        return sb;
+    }
+
+    @Override
+    public int compareTo(Animal other) {
+        return this.id - other.id;
+    }
+
+    @Override
+    public boolean equals(Object obj) {
+        if (obj.getClass() != this.getClass()) {
+            return false;
+        }
+        Animal other = (Animal)obj;
+        return this.id == other.id;
     }
 }
