@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8ce1d4d-76c4-4e61-b986-9e92ec6548e4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Camel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Donkey.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Horse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/SpeciesModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,12 +28,12 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Elder-one"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Elder-one&quot;
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -55,7 +54,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "draft__subclasses",
+    "git-widget-placeholder": "SpeciesModifier__class",
     "last_opened_file_path": "/home/alex/IdeaProjects/animals-registration/project_files/src",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
@@ -77,6 +76,15 @@
       <option name="presentableId" value="Default" />
       <updated>1701356096889</updated>
     </task>
+    <task id="LOCAL-00001" summary="Added draft subclasses">
+      <option name="closed" value="true" />
+      <created>1701524663158</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1701524663158</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -89,5 +97,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added draft subclasses" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added draft subclasses" />
   </component>
 </project>
