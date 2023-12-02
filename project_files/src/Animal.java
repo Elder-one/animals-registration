@@ -1,8 +1,6 @@
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public abstract class Animal implements Comparable<Animal>{
@@ -22,6 +20,26 @@ public abstract class Animal implements Comparable<Animal>{
         count += 1;
         setBirthDate(bDate);
         animals.add(this);
+        Collections.sort(animals);
+    }
+
+    public static Animal getAnimal(int id) {
+        int start = 0;
+        int stop = animals.size() - 1;
+        while(stop > start) {
+            int center = (start + stop) / 2;
+            if (animals.get(center).id < id) {
+                start = center;
+            } else if (animals.get(center).id > id) {
+                stop = center;
+            } else return animals.get(center);
+        }
+        if (animals.get(start).id != id) {
+            return null;
+        }
+        else {
+            return animals.get(start);
+        }
     }
 
     public int getId() {
