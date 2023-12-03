@@ -1,5 +1,6 @@
 import java.text.ParseException;
 import java.util.ArrayList;
+import java.util.GregorianCalendar;
 
 public abstract class Pet extends Animal {
     public static class Trick {
@@ -22,7 +23,7 @@ public abstract class Pet extends Animal {
     private ArrayList<Trick> tricks;
     public enum species{CAT, DOG, HAMSTER};
 
-    public Pet(String name, Animal.gen gender, String bDate) throws ParseException {
+    public Pet(String name, Animal.gen gender, GregorianCalendar bDate) {
         super(name, gender, bDate);
         this.tricks = new ArrayList<Trick>();
     }

@@ -13,14 +13,12 @@ public abstract class Animal implements Comparable<Animal>{
     private gen gender;
     private GregorianCalendar birthDate;
 
-    public Animal(String name, gen gender, String bDate) throws ParseException {
+    public Animal(String name, gen gender, GregorianCalendar bDate) {
         this.name = name;
         this.gender = gender;
         this.id = count;
         count += 1;
-        setBirthDate(bDate);
-        animals.add(this);
-        Collections.sort(animals);
+        this.birthDate = bDate;
     }
 
     public static Animal getAnimal(int id) {
@@ -63,15 +61,6 @@ public abstract class Animal implements Comparable<Animal>{
         this.gender = value;
     }
 
-    public void setBirthDate(String value) throws ParseException {
-        SimpleDateFormat formatter = new SimpleDateFormat(
-                "yyyy-MM-dd");
-        Date date = formatter.parse(value);
-        GregorianCalendar calendar = (GregorianCalendar)GregorianCalendar.getInstance();
-        calendar.setTime(date);
-        this.birthDate = calendar;
-    }
-
     public String getName() {
         return this.name;
     }
@@ -80,10 +69,8 @@ public abstract class Animal implements Comparable<Animal>{
         return this.gender;
     }
 
-    public String getBirthDate() {
-        SimpleDateFormat formatter = new SimpleDateFormat(
-                "yyyy-MM-dd");
-        return formatter.format(this.birthDate.getTime());
+    public GregorianCalendar getBirthDate() {
+        return this.birthDate;
     }
 
     @Override
