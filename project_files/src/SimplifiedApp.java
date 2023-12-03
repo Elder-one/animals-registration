@@ -1,9 +1,6 @@
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.GregorianCalendar;
-import java.util.Scanner;
+import java.util.*;
 
 public class SimplifiedApp {
     public class StartPage {
@@ -160,6 +157,7 @@ public class SimplifiedApp {
                         break;
                     case 3:
                         Hamsters.run();
+                        break;
                     case -1:
                         return;
                     default:
@@ -188,6 +186,7 @@ public class SimplifiedApp {
                         break;
                     case 3:
                         Donkeys.run();
+                        break;
                     case -1:
                         return;
                     default:
@@ -317,6 +316,7 @@ public class SimplifiedApp {
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
                 System.out.println(animal);
+                System.out.println("----------------");
                 System.out.println("Mastered tricks:");
                 if (isPet) {
                     Pet pet = (Pet)animal;
@@ -331,6 +331,7 @@ public class SimplifiedApp {
                 else {
                     System.out.println("Draft animals cannot be trained");
                 }
+                System.out.println("----------------");
                 System.out.println(" 1: Train new trick (Pets only!!!)");
                 System.out.println(" 2: Edit the species");
                 System.out.println("-1: Back");
@@ -454,15 +455,24 @@ public class SimplifiedApp {
     }
 
     public static int getIntResponse(String message) {
-        System.out.print(message);
-        Scanner s = new Scanner(System.in);
-        return s.nextInt();
+        Integer result = null;
+        while (true) {
+            System.out.print(message);
+            Scanner s = new Scanner(System.in);
+            try {
+                result = s.nextInt();
+                return result;
+            }
+            catch (InputMismatchException e) {
+                continue;
+            }
+        }
     }
 
     public static String getStringResponse(String msg) {
         System.out.print(msg);
         Scanner s = new Scanner(System.in);
-        return s.next();
+        return s.nextLine();
     }
 
     public static int animalProfileLoop () {
@@ -515,6 +525,8 @@ public class SimplifiedApp {
             switch (result) {
                 case "-1":
                     return null;
+                case "":
+                    continue;
                 default:
                     return result;
             }

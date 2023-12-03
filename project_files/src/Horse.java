@@ -18,6 +18,9 @@ public class Horse extends Draft{
 
     @Override
     public String toString() {
-        return String.format("%10s %s","Horse",super.toString());
+        return String.format("%5d %10s %s",
+                this.getId(),
+                "Horse",
+                super.toString());
     }
 }

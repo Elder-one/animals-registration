@@ -18,6 +18,9 @@ public class Camel extends Draft{
 
     @Override
     public String toString() {
-        return String.format("%10s %s","Camel",super.toString());
+        return String.format("%5d %10s %s",
+                this.getId(),
+                "Camel",
+                super.toString());
     }
 }

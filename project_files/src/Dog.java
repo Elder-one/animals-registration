@@ -18,6 +18,9 @@ public class Dog extends Pet{
 
     @Override
     public String toString() {
-        return String.format("%10s %s","Dog",super.toString());
+        return String.format("%5d %10s %s",
+                this.getId(),
+                "Dog",
+                super.toString());
     }
 }

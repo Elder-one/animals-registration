@@ -16,7 +16,7 @@ public abstract class Pet extends Animal {
 
         @Override
         public String toString() {
-            return String.format("%12s %s", this.name, this.description);
+            return String.format("%12s | %s", this.name, this.description);
         }
     }
 
