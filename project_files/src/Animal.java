@@ -4,7 +4,7 @@ import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public abstract class Animal implements Comparable<Animal>{
-    public static ArrayList<Animal> animals;
+    public static ArrayList<Animal> animals = new ArrayList<Animal>();
     private static Integer count = 0;
     private Integer id;
     private String name;
@@ -24,12 +24,15 @@ public abstract class Animal implements Comparable<Animal>{
     public static Animal getAnimal(int id) {
         int start = 0;
         int stop = animals.size() - 1;
+        if (start > stop) {
+            return null;
+        }
         while(stop > start) {
             int center = (start + stop) / 2;
             if (animals.get(center).id < id) {
-                start = center;
+                start = center+1;
             } else if (animals.get(center).id > id) {
-                stop = center;
+                stop = center-1;
             } else return animals.get(center);
         }
         if (animals.get(start).id != id) {
@@ -51,6 +54,13 @@ public abstract class Animal implements Comparable<Animal>{
         long diff_millies = cur_date.getTime() - b_date.getTime();
         TimeUnit timeUnit = TimeUnit.DAYS;
         return (int)timeUnit.convert(diff_millies, TimeUnit.MILLISECONDS) / 30;
+    }
+
+    public String getBirthDateString() {
+        SimpleDateFormat formatter = new SimpleDateFormat(
+                "yyyy-MM-dd");
+        Date date = this.birthDate.getTime();
+        return formatter.format(date);
     }
 
     public void setName(String value) {
@@ -79,10 +89,9 @@ public abstract class Animal implements Comparable<Animal>{
         if (this.gender == Animal.gen.MALE) {
             gender = "MALE";
         }
-        String sb = String.format("%5d ", this.id) +
-                String.format("%12s ", this.name) +
+        String sb = String.format("%12s ", this.name) +
                 String.format("%8s ", gender) +
-                String.format("%13s", this.getBirthDate());
+                String.format("%13s", this.getBirthDateString());
         return sb;
     }
 

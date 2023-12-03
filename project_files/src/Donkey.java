@@ -18,6 +18,9 @@ public class Donkey extends Draft{
 
     @Override
     public String toString() {
-        return String.format("%10s %s","Donkey",super.toString());
+        return String.format("%5d %10s %s",
+                this.getId(),
+                "Donkey",
+                super.toString());
     }
 }
