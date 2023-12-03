@@ -1,8 +1,6 @@
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import java.util.*;
 import java.util.concurrent.TimeUnit;
 
 public abstract class Animal implements Comparable<Animal>{
@@ -15,13 +13,31 @@ public abstract class Animal implements Comparable<Animal>{
     private gen gender;
     private GregorianCalendar birthDate;
 
-    public Animal(String name, gen gender, String bDate) throws ParseException {
+    public Animal(String name, gen gender, GregorianCalendar bDate) {
         this.name = name;
         this.gender = gender;
         this.id = count;
         count += 1;
-        setBirthDate(bDate);
-        animals.add(this);
+        this.birthDate = bDate;
+    }
+
+    public static Animal getAnimal(int id) {
+        int start = 0;
+        int stop = animals.size() - 1;
+        while(stop > start) {
+            int center = (start + stop) / 2;
+            if (animals.get(center).id < id) {
+                start = center;
+            } else if (animals.get(center).id > id) {
+                stop = center;
+            } else return animals.get(center);
+        }
+        if (animals.get(start).id != id) {
+            return null;
+        }
+        else {
+            return animals.get(start);
+        }
     }
 
     public int getId() {
@@ -45,15 +61,6 @@ public abstract class Animal implements Comparable<Animal>{
         this.gender = value;
     }
 
-    public void setBirthDate(String value) throws ParseException {
-        SimpleDateFormat formatter = new SimpleDateFormat(
-                "yyyy-MM-dd");
-        Date date = formatter.parse(value);
-        GregorianCalendar calendar = (GregorianCalendar)GregorianCalendar.getInstance();
-        calendar.setTime(date);
-        this.birthDate = calendar;
-    }
-
     public String getName() {
         return this.name;
     }
@@ -62,10 +69,8 @@ public abstract class Animal implements Comparable<Animal>{
         return this.gender;
     }
 
-    public String getBirthDate() {
-        SimpleDateFormat formatter = new SimpleDateFormat(
-                "yyyy-MM-dd");
-        return formatter.format(this.birthDate.getTime());
+    public GregorianCalendar getBirthDate() {
+        return this.birthDate;
     }
 
     @Override
