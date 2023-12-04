@@ -9,7 +9,6 @@ public class Horse extends Draft{
         super(name, gender, bDate);
         this.species = Draft.species.HORSE;
         Animal.animals.add(this);
-        Collections.sort(animals);
     }
 
     public Draft.species getSpecies() {

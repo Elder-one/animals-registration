@@ -9,7 +9,6 @@ public class Cat extends Pet{
         super(name, gender, bDate);
         this.species = Pet.species.CAT;
         Animal.animals.add(this);
-        Collections.sort(animals);
     }
 
     public Pet.species getSpecies() {

@@ -9,7 +9,6 @@ public class Camel extends Draft{
         super(name, gender, bDate);
         this.species = Draft.species.CAMEL;
         Animal.animals.add(this);
-        Collections.sort(animals);
     }
 
     public Draft.species getSpecies() {

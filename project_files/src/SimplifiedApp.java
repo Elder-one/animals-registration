@@ -3,6 +3,10 @@ import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class SimplifiedApp {
+    private static String animalsHeadline =
+            String.format("%5s %10s %12s %8s %13s",
+                                "ID", "SPECIES", "NAME",
+                                "GENDER", "BORN");
     public class StartPage {
         public static void run() {
             int resp = 0;
@@ -21,7 +25,8 @@ public class SimplifiedApp {
                         AllAnimalsPage.run();
                         break;
                     case 3:
-                        AddNewAnimal.run();
+                        Counter counter = new Counter();
+                        counter.add();
                         break;
                     case -1:
                         return;
@@ -119,6 +124,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     System.out.println(animal);
                 }
@@ -201,6 +207,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     if (animal instanceof Cat) {
                         System.out.println(animal);
@@ -220,6 +227,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     if (animal instanceof Dog) {
                         System.out.println(animal);
@@ -239,6 +247,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     if (animal instanceof Hamster) {
                         System.out.println(animal);
@@ -258,6 +267,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     if (animal instanceof Horse) {
                         System.out.println(animal);
@@ -277,6 +287,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     if (animal instanceof Camel) {
                         System.out.println(animal);
@@ -296,6 +307,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     if (animal instanceof Donkey) {
                         System.out.println(animal);
@@ -315,6 +327,7 @@ public class SimplifiedApp {
             boolean isPet = animal instanceof Pet;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 System.out.println(animal);
                 System.out.println("----------------");
                 System.out.println("Mastered tricks:");
@@ -393,12 +406,15 @@ public class SimplifiedApp {
                 switch (resp) {
                     case 1:
                         animal = SpeciesModifier.convToPet(animal, Pet.species.CAT);
+                        Collections.sort(Animal.animals);
                         return;
                     case 2:
                         animal = SpeciesModifier.convToPet(animal, Pet.species.DOG);
+                        Collections.sort(Animal.animals);
                         return;
                     case 3:
                         animal = SpeciesModifier.convToPet(animal, Pet.species.HAMSTER);
+                        Collections.sort(Animal.animals);
                         return;
                     case -1:
                         return;
@@ -422,12 +438,15 @@ public class SimplifiedApp {
                 switch (resp) {
                     case 1:
                         animal = SpeciesModifier.convToDraft(animal, Draft.species.HORSE);
+                        Collections.sort(Animal.animals);
                         return;
                     case 2:
                         animal = SpeciesModifier.convToDraft(animal, Draft.species.CAMEL);
+                        Collections.sort(Animal.animals);
                         return;
                     case 3:
                         animal = SpeciesModifier.convToDraft(animal, Draft.species.DONKEY);
+                        Collections.sort(Animal.animals);
                         return;
                     case -1:
                         return;
@@ -476,14 +495,13 @@ public class SimplifiedApp {
     }
 
     public static int animalProfileLoop () {
-        int resp = getIntResponse("Choose animal id to open profile\n" +
-                "or -1 to return --> ");
         while (true) {
+            int resp = getIntResponse("Choose animal id to open profile\n" +
+                    "or -1 to return --> ");
             if (resp == -1) {
                 return -1;
             } else if (Animal.getAnimal(resp) == null) {
-                resp = getIntResponse("Choose animal id to open profile\n" +
-                        "or -1 to return --> ");
+                continue;
             } else {
                 AnimalProfile.run(Animal.getAnimal(resp));
                 return 0;
@@ -541,7 +559,7 @@ public class SimplifiedApp {
             String bDate = getStringResponse("Enter animal's birth date\n" +
                                 "Format: YYYY-MM-DD\n" +
                                 "or -1 to cancel--> ");
-            if (bDate == "-1") {
+            if (bDate.equals("-1")) {
                 return null;
             }
             Date date = new Date();
