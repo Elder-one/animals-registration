@@ -1,8 +1,8 @@
-import java.text.ParseException;
-import java.util.Collections;
+package species;
+
 import java.util.GregorianCalendar;
 
-public class Camel extends Draft{
+public class Camel extends Draft {
     private Draft.species species;
 
     public Camel(String name, Animal.gen gender, GregorianCalendar bDate) {

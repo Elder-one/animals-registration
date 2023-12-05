@@ -1,3 +1,7 @@
+package tools;
+
+import app.SimplifiedApp;
+
 public class Counter implements AutoCloseable {
     private static Integer count = 0;
     private Integer status = null;
@@ -7,12 +11,6 @@ public class Counter implements AutoCloseable {
             super("animal addition interrupted");
         }
     }
-
-//    public static class OutsideOfTryBlockUsage extends Exception {
-//        OutsideOfTryBlockUsage() {
-//            super("Usage of Counter object outside of the try block");
-//        }
-//    }
 
     public Counter() {
         this.status = 0;

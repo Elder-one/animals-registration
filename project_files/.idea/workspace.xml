@@ -4,17 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d8ce1d4d-76c4-4e61-b986-9e92ec6548e4" name="Changes" comment="Main method and debug">
-      <change afterPath="$PROJECT_DIR$/src/Counter.java" afterDir="false" />
+    <list default="true" id="d8ce1d4d-76c4-4e61-b986-9e92ec6548e4" name="Changes" comment="+ Optimized Animal.animals sorting issue&#10;+ Added Counter class">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL_db_init/7_8_9.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MySQL_db_init/Humans_friends_final.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/10_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/10_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/11_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/11_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/11_3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/12_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/12_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/terminal_history.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tools/Inputs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/project_files.iml" beforeDir="false" afterPath="$PROJECT_DIR$/project_files.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Camel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Camel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Donkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Donkey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hamster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Horse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimplifiedApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimplifiedApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Animal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Camel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Camel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Cat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/Counter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Dog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Donkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Donkey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Draft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Draft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Hamster.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Horse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Pet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SimplifiedApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/SimplifiedApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpeciesModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/SpeciesModifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/class_diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/class_diagram.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +70,9 @@
       </UrlAndAccount>
     </option>
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -66,17 +89,25 @@
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "optimization",
-    "last_opened_file_path": "/home/alex/IdeaProjects/animals-registration/project_files/src",
+    "last_opened_file_path": "/home/alex/IdeaProjects/animals-registration/project_files/MySQL_db_init",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.editor"
+    "settings.editor.selected.configurable": "Errors"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/MySQL_db_init" />
+      <recent name="$PROJECT_DIR$/images/MySQL_tasks" />
+      <recent name="$PROJECT_DIR$/images" />
       <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/images" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -104,7 +135,15 @@
       <option name="project" value="LOCAL" />
       <updated>1701551249333</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="+ Optimized Animal.animals sorting issue&#10;+ Added Counter class">
+      <option name="closed" value="true" />
+      <created>1701723440526</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1701723440526</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -121,6 +160,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added draft subclasses" />
     <MESSAGE value="Added app classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added app classes" />
+    <MESSAGE value="+ Optimized Animal.animals sorting issue&#10;+ Added Counter class" />
+    <option name="LAST_COMMIT_MESSAGE" value="+ Optimized Animal.animals sorting issue&#10;+ Added Counter class" />
   </component>
 </project>

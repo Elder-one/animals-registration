@@ -1,8 +1,8 @@
-import java.text.ParseException;
-import java.util.Collections;
+package species;
+
 import java.util.GregorianCalendar;
 
-public class Dog extends Pet{
+public class Dog extends Pet {
     private Pet.species species;
 
     public Dog(String name, Animal.gen gender, GregorianCalendar bDate) {

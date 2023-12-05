@@ -1,13 +1,13 @@
-import java.text.ParseException;
-import java.util.Collections;
+package species;
+
 import java.util.GregorianCalendar;
 
-public class Hamster extends Pet{
+public class Cat extends Pet {
     private Pet.species species;
 
-    public Hamster(String name, Animal.gen gender, GregorianCalendar bDate) {
+    public Cat(String name, Animal.gen gender, GregorianCalendar bDate) {
         super(name, gender, bDate);
-        this.species = Pet.species.HAMSTER;
+        this.species = Pet.species.CAT;
         Animal.animals.add(this);
     }
 
@@ -19,7 +19,7 @@ public class Hamster extends Pet{
     public String toString() {
         return String.format("%5d %10s %s",
                 this.getId(),
-                "Hamster",
+                "Cat",
                 super.toString());
     }
 }
