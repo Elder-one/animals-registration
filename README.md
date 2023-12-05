@@ -28,6 +28,8 @@ species.
 ![history](project_files/images/terminal_history.png)\
 &nbsp;&nbsp;&nbsp;&nbsp;В истории команд содержатся несколько лишних записей,
 как следствие моих ошибок
+
+
 ---
 ### Задание 6:
 
@@ -36,6 +38,8 @@ species.
 &nbsp;&nbsp;&nbsp;&nbsp;Я принял решение не давать вьючным животным возможность
 обучаться трюкам, поскольку в таком случае классы отличались бы
 только своим названием
+
+
 ---
 ### Задания 7-9:
 
@@ -43,6 +47,8 @@ species.
 &nbsp;&nbsp;&nbsp;&nbsp;Инициализация и заполнение таблиц базы данных
 Humans_friends представленны в виде
 [dump-файла](project_files/MySQL_db_init/7_8_9.sql)
+
+
 ---
 ### Задание 10:
 
@@ -52,6 +58,8 @@ Humans_friends представленны в виде
 
 *![10_1](project_files/images/MySQL_tasks/10_1.png)
 *![10_2](project_files/images/MySQL_tasks/10_2.png)
+
+
 ---
 ### Задание 11:
 
@@ -63,6 +71,8 @@ Humans_friends представленны в виде
 *![11_1](project_files/images/MySQL_tasks/11_1.png)
 *![11_2](project_files/images/MySQL_tasks/11_2.png)
 *![11_3](project_files/images/MySQL_tasks/11_3.png)
+
+
 ---
 ### Задание 12:
 
@@ -72,6 +82,8 @@ Humans_friends представленны в виде
 
 *![12_1](project_files/images/MySQL_tasks/12_1.png)
 *![12_2](project_files/images/MySQL_tasks/12_2.png)
+
+
 ---
 ### Задание 13:
 
@@ -82,6 +94,8 @@ Humans_friends представленны в виде
 их наследники Cat, Dog, Hamster, Horse, Camel,
 Donkey содержатся в пакете
 [species.](project_files/src/species)
+
+
 ---
 ### Задание 14:
 
@@ -106,6 +120,8 @@ app, species, tools.\
 Пакет [tools](project_files/src/tools) содержит инструменты
 для взаимодействия с пользователем, смены вида
 животного и счётчик Counter.
+
+
 ---
 ### Задание 15:
 
