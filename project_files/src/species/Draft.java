@@ -1,7 +1,10 @@
-import java.text.ParseException;
+package species;
+
+import species.Animal;
+
 import java.util.GregorianCalendar;
 
-public abstract class Draft extends Animal{
+public abstract class Draft extends Animal {
     public enum species{HORSE, CAMEL, DONKEY}
 
     public Draft(String name, Animal.gen gender, GregorianCalendar bDate) {
