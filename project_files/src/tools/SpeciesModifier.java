@@ -1,6 +1,9 @@
-import java.text.ParseException;
+package tools;
+
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.GregorianCalendar;
+import species.*;
 
 public class SpeciesModifier {
 
@@ -26,14 +29,17 @@ public class SpeciesModifier {
             if (target == Pet.species.CAT) {
                 Pet result = new Cat(name, gender, bDate);
                 result.setId(id);
+                Collections.sort(Animal.animals);
                 return result;
             } else if (target == Pet.species.DOG) {
                 Pet result = new Dog(name, gender, bDate);
                 result.setId(id);
+                Collections.sort(Animal.animals);
                 return result;
             } else {
                 Pet result = new Hamster(name, gender, bDate);
                 result.setId(id);
+                Collections.sort(Animal.animals);
                 return result;
             }
         }
@@ -45,16 +51,19 @@ public class SpeciesModifier {
                 Pet result = new Dog(name, gender, bDate);
                 inheritTricks(result, trickList);
                 result.setId(id);
+                Collections.sort(Animal.animals);
                 return result;
             } else if (target == Pet.species.CAT) {
                 Pet result = new Cat(name, gender, bDate);
                 inheritTricks(result, trickList);
                 result.setId(id);
+                Collections.sort(Animal.animals);
                 return result;
             } else {
                 Pet result = new Hamster(name, gender, bDate);
                 inheritTricks(result, trickList);
                 result.setId(id);
+                Collections.sort(Animal.animals);
                 return result;
             }
         }
@@ -69,14 +78,17 @@ public class SpeciesModifier {
         if (target == Draft.species.HORSE) {
             Draft result = new Horse(name, gender, bDate);
             result.setId(id);
+            Collections.sort(Animal.animals);
             return result;
         } else if (target == Draft.species.CAMEL) {
             Draft result = new Camel(name, gender, bDate);
             result.setId(id);
+            Collections.sort(Animal.animals);
             return result;
         } else {
             Draft result = new Donkey(name, gender, bDate);
             result.setId(id);
+            Collections.sort(Animal.animals);
             return result;
         }
     }

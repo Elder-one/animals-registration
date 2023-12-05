@@ -1,13 +1,31 @@
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
+package app;
+
+import species.*;
 import java.util.*;
+import tools.Counter;
+import tools.SpeciesModifier;
+import static tools.Inputs.*;
+
 
 public class SimplifiedApp {
+    private static String animalsHeadline =
+            String.format("%5s %10s %12s %8s %13s",
+                                "ID", "SPECIES", "NAME",
+                                "GENDER", "BORN")
+            + "\n" +
+            "-".repeat(5+10+12+8+13+4);
     public class StartPage {
         public static void run() {
+            boolean interrupted = false;
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                if (interrupted) {
+                    System.out.println("---------------------------");
+                    System.out.println("Animal addition interrupted");
+                    System.out.println("---------------------------");
+                }
+                interrupted = false;
                 System.out.println(" 1: Show animal groups");
                 System.out.println(" 2: Show all animals");
                 System.out.println(" 3: Add new animal");
@@ -21,7 +39,11 @@ public class SimplifiedApp {
                         AllAnimalsPage.run();
                         break;
                     case 3:
-                        AddNewAnimal.run();
+                        try (Counter counter = new Counter()) {
+                            counter.add();
+                        } catch (Counter.AnimalAdditionInterrupted e) {
+                            interrupted = true;
+                        }
                         break;
                     case -1:
                         return;
@@ -119,6 +141,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     System.out.println(animal);
                 }
@@ -201,6 +224,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     if (animal instanceof Cat) {
                         System.out.println(animal);
@@ -220,6 +244,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     if (animal instanceof Dog) {
                         System.out.println(animal);
@@ -239,6 +264,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     if (animal instanceof Hamster) {
                         System.out.println(animal);
@@ -258,6 +284,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     if (animal instanceof Horse) {
                         System.out.println(animal);
@@ -277,6 +304,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     if (animal instanceof Camel) {
                         System.out.println(animal);
@@ -296,6 +324,7 @@ public class SimplifiedApp {
             int resp = 0;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 for (Animal animal : Animal.animals) {
                     if (animal instanceof Donkey) {
                         System.out.println(animal);
@@ -315,6 +344,7 @@ public class SimplifiedApp {
             boolean isPet = animal instanceof Pet;
             while (true) {
                 System.out.println(System.lineSeparator().repeat(50));
+                System.out.println(animalsHeadline);
                 System.out.println(animal);
                 System.out.println("----------------");
                 System.out.println("Mastered tricks:");
@@ -454,106 +484,18 @@ public class SimplifiedApp {
         }
     }
 
-    public static int getIntResponse(String message) {
-        Integer result = null;
-        while (true) {
-            System.out.print(message);
-            Scanner s = new Scanner(System.in);
-            try {
-                result = s.nextInt();
-                return result;
-            }
-            catch (InputMismatchException e) {
-                continue;
-            }
-        }
-    }
-
-    public static String getStringResponse(String msg) {
-        System.out.print(msg);
-        Scanner s = new Scanner(System.in);
-        return s.nextLine();
-    }
-
     public static int animalProfileLoop () {
-        int resp = getIntResponse("Choose animal id to open profile\n" +
-                "or -1 to return --> ");
         while (true) {
+            int resp = getIntResponse("Choose animal id to open profile\n" +
+                    "or -1 to return --> ");
             if (resp == -1) {
                 return -1;
             } else if (Animal.getAnimal(resp) == null) {
-                resp = getIntResponse("Choose animal id to open profile\n" +
-                        "or -1 to return --> ");
+                continue;
             } else {
                 AnimalProfile.run(Animal.getAnimal(resp));
                 return 0;
             }
-        }
-    }
-
-    public static Animal.gen inputGender() {
-        int gender = 0;
-        Animal.gen result = null;
-        while (true) {
-            System.out.println(System.lineSeparator().repeat(50));
-            System.out.println("Choose gender:");
-            System.out.println(" 1: MALE");
-            System.out.println(" 2: FEMALE");
-            System.out.println("-1: Cancel");
-            gender = getIntResponse("Your option --> ");
-            switch (gender) {
-                case 1:
-                    result = Animal.gen.MALE;
-                    return result;
-                case 2:
-                    result = Animal.gen.FEMALE;
-                    return result;
-                case -1:
-                    return null;
-                default:
-                    break;
-            }
-        }
-    }
-
-    public static String inputName() {
-        String result = null;
-        while (true) {
-            System.out.println(System.lineSeparator().repeat(50));
-            result = getStringResponse("Enter animal's name\n" +
-                    "or -1 to cancel--> ");
-            switch (result) {
-                case "-1":
-                    return null;
-                case "":
-                    continue;
-                default:
-                    return result;
-            }
-        }
-    }
-
-    public static GregorianCalendar inputBirthDate() {
-        SimpleDateFormat formatter = new SimpleDateFormat(
-                "yyyy-MM-dd");
-        while(true) {
-            System.out.println(System.lineSeparator().repeat(50));
-            String bDate = getStringResponse("Enter animal's birth date\n" +
-                                "Format: YYYY-MM-DD\n" +
-                                "or -1 to cancel--> ");
-            if (bDate == "-1") {
-                return null;
-            }
-            Date date = new Date();
-            try {
-                date = formatter.parse(bDate);
-            }
-            catch (ParseException e) {
-                continue;
-            }
-            GregorianCalendar calendar = (GregorianCalendar) GregorianCalendar.getInstance();
-            calendar.setTime(date);
-            return calendar;
         }
     }
 

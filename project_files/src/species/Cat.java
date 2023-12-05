@@ -1,15 +1,14 @@
-import java.text.ParseException;
-import java.util.Collections;
+package species;
+
 import java.util.GregorianCalendar;
 
-public class Cat extends Pet{
+public class Cat extends Pet {
     private Pet.species species;
 
     public Cat(String name, Animal.gen gender, GregorianCalendar bDate) {
         super(name, gender, bDate);
         this.species = Pet.species.CAT;
         Animal.animals.add(this);
-        Collections.sort(animals);
     }
 
     public Pet.species getSpecies() {
