@@ -5,36 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d8ce1d4d-76c4-4e61-b986-9e92ec6548e4" name="Changes" comment="+ Optimized Animal.animals sorting issue&#10;+ Added Counter class">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL_db_init/7_8_9.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MySQL_db_init/Humans_friends_final.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/10_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/10_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/11_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/11_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/11_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/12_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/MySQL_tasks/12_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/terminal_history.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tools/Inputs.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Animal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Application.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Camel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Camel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Cat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Donkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Donkey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Draft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Draft.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Hamster.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Horse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/species/Pet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SimplifiedApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/SimplifiedApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SpeciesModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tools/SpeciesModifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/class_diagram.png" beforeDir="false" afterPath="$PROJECT_DIR$/images/class_diagram.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +23,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/.." value="main" />
+        <entry key="$PROJECT_DIR$/.." value="optimization" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
@@ -90,8 +62,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "optimization",
-    "last_opened_file_path": "/home/alex/IdeaProjects/animals-registration/project_files/MySQL_db_init",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "/home/alex/IdeaProjects/animals-registration/README.md",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",

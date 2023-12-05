@@ -1,0 +1,98 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"d8ce1d4d-76c4-4e61-b986-9e92ec6548e4\" name=\"Changes\" comment=\"Added app classes\">\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Animal.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Animal.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Camel.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Camel.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Cat.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Cat.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Dog.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Dog.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Donkey.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Donkey.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Draft.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Draft.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Hamster.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Hamster.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Horse.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Horse.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/Pet.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/Pet.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/SimplifiedApp.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/SimplifiedApp.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/SpeciesModifier.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/SpeciesModifier.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\n      <map>\n        <entry key=\"$PROJECT_DIR$/..\" value=\"main\" />\n      </map>\n    </option>\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$/..\" />\n  </component>\n  <component name=\"GitHubPullRequestSearchHistory\">{\n  &quot;lastFilter&quot;: {\n    &quot;state&quot;: &quot;OPEN&quot;,\n    &quot;assignee&quot;: &quot;Elder-one&quot;\n  }\n}</component>\n  <component name=\"GithubPullRequestsUISettings\">\n    <option name=\"selectedUrlAndAccountId\">\n      <UrlAndAccount>\n        <option name=\"accountId\" value=\"f1b10a85-6606-47f9-8f9c-2f5de324cd05\" />\n        <option name=\"url\" value=\"https://github.com/Elder-one/animals-registration.git\" />\n      </UrlAndAccount>\n    </option>\n  </component>\n  <component name=\"ProjectColorInfo\">{\n  &quot;associatedIndex&quot;: 1\n}</component>\n  <component name=\"ProjectId\" id=\"2YtsE7f5d7bpaj1jtiQc02LRLlG\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">{\n  &quot;keyToString&quot;: {\n    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,\n    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,\n    &quot;git-widget-placeholder&quot;: &quot;application&quot;,\n    &quot;last_opened_file_path&quot;: &quot;/home/alex/IdeaProjects/animals-registration/project_files/src&quot;,\n    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,\n    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,\n    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,\n    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;\n  }\n}</component>\n  <component name=\"RecentsManager\">\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/src\" />\n    </key>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"d8ce1d4d-76c4-4e61-b986-9e92ec6548e4\" name=\"Changes\" comment=\"\" />\n      <created>1701356096889</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1701356096889</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Added draft subclasses\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1701524663158</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1701524663158</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Added app classes\">\n      <option name=\"closed\" value=\"true\" />\n      <created>1701551249333</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1701551249333</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"3\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <MESSAGE value=\"Added draft subclasses\" />\n    <MESSAGE value=\"Added app classes\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Added app classes\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision bc04664eeb080deb7ea4be6c44920cd89fd61454)
++++ b/.idea/workspace.xml	(date 1701628678631)
+@@ -4,20 +4,7 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="d8ce1d4d-76c4-4e61-b986-9e92ec6548e4" name="Changes" comment="Added app classes">
+-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Animal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Animal.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Camel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Camel.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Cat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cat.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Dog.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Donkey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Donkey.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Draft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Draft.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Hamster.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hamster.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Horse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Horse.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/Pet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pet.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/SimplifiedApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SimplifiedApp.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/SpeciesModifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SpeciesModifier.java" afterDir="false" />
+-    </list>
++    <list default="true" id="d8ce1d4d-76c4-4e61-b986-9e92ec6548e4" name="Changes" comment="Added app classes" />
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -33,7 +20,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$/.." value="main" />
++        <entry key="$PROJECT_DIR$/.." value="main_program" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+@@ -60,18 +47,18 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent">{
+-  &quot;keyToString&quot;: {
+-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+-    &quot;git-widget-placeholder&quot;: &quot;application&quot;,
+-    &quot;last_opened_file_path&quot;: &quot;/home/alex/IdeaProjects/animals-registration/project_files/src&quot;,
+-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor&quot;
++  <component name="PropertiesComponent"><![CDATA[{
++  "keyToString": {
++    "RunOnceActivity.OpenProjectViewOnStart": "true",
++    "RunOnceActivity.ShowReadmeOnStart": "true",
++    "git-widget-placeholder": "main",
++    "last_opened_file_path": "/home/alex/IdeaProjects/animals-registration/project_files/src",
++    "project.structure.last.edited": "Modules",
++    "project.structure.proportion": "0.15",
++    "project.structure.side.proportion": "0.2",
++    "settings.editor.selected.configurable": "preferences.editor"
+   }
+-}</component>
++}]]></component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="$PROJECT_DIR$/src" />
+@@ -102,7 +89,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1701551249333</updated>
+     </task>
+-    <option name="localTasksCounter" value="3" />
++    <task id="LOCAL-00003" summary="Main method and debug">
++      <option name="closed" value="true" />
++      <created>1701628501793</created>
++      <option name="number" value="00003" />
++      <option name="presentableId" value="LOCAL-00003" />
++      <option name="project" value="LOCAL" />
++      <updated>1701628501793</updated>
++    </task>
++    <option name="localTasksCounter" value="4" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -119,6 +114,7 @@
+   <component name="VcsManagerConfiguration">
+     <MESSAGE value="Added draft subclasses" />
+     <MESSAGE value="Added app classes" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Added app classes" />
++    <MESSAGE value="Main method and debug" />
++    <option name="LAST_COMMIT_MESSAGE" value="Main method and debug" />
+   </component>
+ </project>
+\ No newline at end of file
